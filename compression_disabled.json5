@@ -1,0 +1,13 @@
+/// Configure internal transport parameters
+{
+  transport: {
+    link: {
+      compression: {
+        /// When is_enabled is true, batches will be sent compressed. It does not affect the
+        /// reception, which always expects compressed batches when built with the feature
+        /// "transport_compression".
+        enabled: false,
+      },
+    },
+  },
+}
